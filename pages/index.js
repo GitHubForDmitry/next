@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Layout.module.css'
 import ArticleList from "../components/ArticleList"
 import { server } from '../config';
@@ -6,10 +5,7 @@ import { server } from '../config';
 export default function Home({articles}) {
   return (
     <div>
-        <Head>
-            <title>webdev news</title>
-            <meta name='keywords' content='web development' />
-        </Head>
+
         <ArticleList articles={articles}/>
     </div>
   )
